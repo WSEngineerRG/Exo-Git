@@ -641,3 +641,92 @@ p {
 /* FIN CODE ANTHONY   */
 /* ################## */
 
+
+
+/* ################## */
+/*   Début CSS Rom1   */
+/* ################## */
+
+#Backchanges
+{
+  /*background-image: url(var (--arrayOfbackgrounds));*/
+  background-image: url("assets/background/a.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.Rom1
+{
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: 30vw;
+  border-left: 5px solid #000000;
+  --border-bottom: 0px solid #000000;
+  --border-bottom50: 1.5px solid #333131;
+  --border-bottom75: 3px solid #000000;
+  --border-bottom90: 5px solid #000000;
+  --border-right: 0px solid #000000;
+  --border-right50: 1.5px solid #333131;
+  --border-right75: 3px solid #000000;
+  --border-right90: 5px solid #000000;
+  --border-top: 0px solid #000000;
+  --border-top50: 1.5px solid #333131;
+  --border-top75: 3px solid #000000;
+  --border-top90: 5px solid #000000;
+  animation: border-animation 4s linear infinite;
+}
+
+.Rom1:hover
+{
+  transform: scale(1.8);
+  transition: all 2s;
+}
+
+
+@keyframes border-animation {
+  0%    {border: var(--border-bottom); right: var(--border-right); top: var(--border-top)}
+  50%   {border: var(--border-bottom50); right: var(--border-right50); top: var(--border-top50)}
+  75%   {border: var(--border-bottom75); right: var(--border-right75); top: var(--border-top75)}
+  90%   {border: var(--border-bottom90); right: var(--border-right90); top: var(--border-top90)}
+  100%  {}
+}
+
+.title-rom1 {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-rom1-1 {
+  --color-1: #000000;
+  --color-2: #ffffff;
+}
+
+.title-rom1-2 {
+  --color-1: #ffffff;
+  --color-2: #000000;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  50%   {color: var(--color-1)}
+  75%   {color: var(--color-2)}
+  90%   {color: var(--color-2)}
+  100%  {color: var(--color-1)}
+}
+
+.p-rom1 {
+  animation: color-animation 4s linear infinite;
+}
+
+.p-rom1-1 {
+  --color-1: #000000;
+  --color-2: #ffffff;
+}
+
+.p-rom1-2 {
+  --color-1: #ffffff;
+  --color-2: #000000;
+}
